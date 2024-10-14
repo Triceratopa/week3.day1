@@ -16,7 +16,7 @@ console.log(finish)*/
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi; ognuno di essi deve essere un valore random compreso tra 0 e 100 (incluso).
 */
-const randomNumbers=()=>{
+/*const randomNumbers=()=>{
     return Math.floor(Math.random()*100 + 1)
 }
 console.log(randomNumbers())
@@ -24,7 +24,7 @@ console.log(randomNumbers())
 /* ESERCIZIO 3 (filter)
   Scrivi una funzione per ricavare solamente i valori PARI da un array composto da soli valori numerici
 */
-const num1=[34,67,34,56,98,23,8,17]
+/*const num1=[34,67,34,56,98,23,8,17]
 const even=num1.filter((n)=>
 {
     return n%2===0
@@ -34,7 +34,7 @@ console.log(even)
   Scrivi una funzione per sommare i numeri contenuti in un array
 
 */
-const sum=num1.reduce((acc,num)=>{
+/*const sum=num1.reduce((acc,num)=>{
     return acc+num
 })
 console.log(sum)
@@ -43,7 +43,7 @@ console.log(sum)
 /* ESERCIZIO 5 (reduce)
   Scrivi una funzione per sommare i numeri contenuti in un array
 */
-const sumArray = (arr) => {
+/*const sumArray = (arr) => {
     let sum = 0;
     arr.forEach((num) => {
         sum += num;
@@ -56,15 +56,32 @@ const sumArray = (arr) => {
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
 
-
+/*const num3=num1.map((num1, n)=>{
+    return n + num1
+})
+console.log(num3)
 /* ESERCIZIO 7 (map)
   Scrivi una funzione che, dato un array di stringhe, ritorni un nuovo array contenente le lunghezze delle rispettive stringhe dell'array di partenza
   es.: ["EPICODE", "is", "great"] => [7, 2, 5]
 */
-
+/*const array=['cat','is', 'fat']
+const total=array.map((cat , is ,fat)=>{
+return array.length
+})
+console.log(array)
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+/* const newArray=[]
+const randomNumbers=(())=>{
+    return Math.floor(Math.random()*100 + 1)
+}
+console.log(randomNumbers())
+const shots=randomNumbers.forEach()=>{
+    if (randomNumbers%2===0){
+return newArray.push()
+    }
+}*/
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
@@ -185,7 +202,14 @@ const movies = [
   /* ESERCIZIO 9 (forEach)
     Scrivi una funzione per trovare il film più vecchio nell'array fornito.
   */
-  
+  const older={...movies,}
+ movies.forEach((Year)=>{
+    if(Year<2000){
+older.push(Year)
+    }
+
+  })
+  console.log(older)
   /* ESERCIZIO 10
     Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
   */
